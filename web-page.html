@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple web page-Audi</title>
+    <script src="https://kit.fontawesome.com/c968b53e7b.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="https://www.freepnglogos.com/uploads/audi-logo-2.png" type="image/x-icon">
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+background-color:white;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/08/audi-r8-in-la_1565054860.jpg);
+  background-repeat: no-repeat;
+  
+background-size: 100% 100%;
+  
+}
+
+.header h1 {
+  font-size: 110px;
+  color: rgb(240, 121, 23);
+  font-family: cursive;
+  padding-bottom: 100px;
+  text-shadow: 5px 5px 5px black;
+  animation-name: col;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes col{
+  0%{  color: rgb(107, 106, 102);}
+  33%{  color: rgb(114, 124, 136);}
+
+  66%{  color: rgb(162, 179, 17);}
+  100%{  color: rgb(240, 139, 23);}
+
+
+}
+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    font-size: 20px;
+}
+
+img.log{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: 50px;
+    top: 95px;
+   animation-name: log;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+
+}
+@keyframes log{
+    from{transform: rotateY(180deg);}
+    to{ transform: rotateY(360deg);}
+}
+p.des{
+    font-size: 40px; color: red;font-family:cursive;
+
+    animation-name: des;
+   animation-duration: 4s;
+   animation-iteration-count: 1;
+}
+@keyframes des{
+    0%{transform: translate(-150px,-200px);}
+     20%{transform: translate(0px,0px);}            
+      40%{transform: translate(0px,-10px);}      
+      60%{transform: translate(0px,0px);}
+       80%{transform: translate(0px,-10px);}      
+      100%{transform: translate(0px,0px);}
+
+
+          
+}
+
+.topnav {
+  background-color:black;
+ position: sticky;
+ top: 0;
+ 
+}
+.topnav::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 25px 20px;
+  background-color:black;
+  margin: 0;
+}
+.topnav a:hover,.dropdown:hover .dropbtn{
+  background-color:grey;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  position: absolute;
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  position: sticky;
+  top: 0%;
+  color: black;
+  padding: 25px 20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+.leftcolumn1{
+    float: left;
+    width: 25%;
+   margin-top: 20px;
+    background-color: black;
+}
+
+ol{
+    counter-reset: point;
+    list-style-type: none;
+    color:white;
+    line-height: 50px;
+    font-size: 20px;
+    height: 100%;
+}
+li::before{
+    counter-increment: point;
+    content: counters(point,".")".";
+    color: aqua;
+
+}
+ol li a{
+    text-decoration: none;
+    color: white;
+}
+ol li a:hover{
+    background-color: grey;
+    color: black;
+    padding: 20px 20px;
+    
+}
+.empty{
+    background-color: black;
+
+}
+
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  
+  
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  border: 2px solid white;    
+box-shadow: 10px  10px 10px black;
+  width: 100%;
+  transition: all 0.8s;
+  
+}
+.fakeimg:hover{
+  transform: scale(1.1,1.1);
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 23px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background:black;
+  margin-top: 20px;
+ 
+}
+a.globe{
+  position: absolute;
+  color: white;
+  top: 50px;
+  right: 20px;
+ 
+}
+p.copy{
+  margin-left: -800px;
+   color: white;
+}
+div.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  width: 150px;
+  height: 35px;
+  border: 1px solid black;
+  color: white;
+  background-color:black;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .leftcolumn1 {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .header h1{
+   font-size: 65px;
+  }
+
+  img.log {  
+   width: 100px;
+   height: 100px;  
+  }
+
+  p.copy {  
+  font-size: 14px; 
+  margin-left: 100px;
+  }
+
+  a.globe {  
+  font-size: 13px; 
+padding-top: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 id="move">Audi</h1>
+  <p class="des">Some see a style statement,we see a power move.</p>
+  <img class="log" src="https://www.freepnglogos.com/uploads/audi-logo-2.png" alt="">
+</div>
+
+<div class="topnav">
+  <a href="https://www.audi.in/in/web/en.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Models <i class="fa-solid fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.audi.in/in/web/en.html">e-tron GT</a>
+      <a href="https://www.audi.in/in/web/en.html">e-tron</a>
+      <a href="https://www.audi.in/in/web/en.html">A-series</a>
+      <a href="https://www.audi.in/in/web/en.html">Q-series</a>
+    </div>
+  </div> 
+  <a href="https://www.audi.in/in/web/en.html">Lifestyle</a>
+  <a href="https://www.audi.in/in/web/en.html" style="float:right">Discover</a>
+  <a href="https://www.audi.in/in/web/en.html" style="float:right">Support</a>
+
+</div>
+
+<div class="row">
+    <div class="leftcolumn1">
+        <div class="empty">
+        <ol >
+            <li><a href="https://www.audi.in/in/web/en.html">e-tron GT</a> </li>
+            <li><a href="https://www.audi.in/in/web/en.html">e-tron </a> </li>
+            <li><a href="https://www.audi.in/in/web/en.html">Q-series</a> <ol>
+                <li>Q-3</li>
+                <li>Q-5</li>
+                <li>Q-7</li>
+                <li>Q-8</li>
+                <li>Q-8.1<ol>
+                    <li>RSQ-8</li>   
+                </ol></ol></li>
+            
+            <li><a href="https://www.audi.in/in/web/en.html">A-series</a> <ol>
+                <li>A-4</li>
+                <li>A-5</li>
+                <li>A-6</li>
+                <li>A-8</li>
+            </ol>  </li> 
+            <li><a href="https://www.audi.in/in/web/en.html">e-tron GT</a> </li>
+            <li><a href="https://www.audi.in/in/web/en.html">e-tron </a> </li>
+            <li><a href="https://www.audi.in/in/web/en.html">Q1-series</a> <ol>
+                <li>Q1-3</li>
+                <li>Q1-5</li>
+                <li>Q1-7</li>
+                <li>Q1-8</li>
+                <li>Q1-8.1<ol>
+                    <li>RSQ1-8</li>   
+                </ol></ol></li>
+                <li><a href="https://www.audi.in/in/web/en.html">A1-series</a> <ol>
+                    <li>A1-4</li>
+                    <li>A1-5</li>
+                    <li>A1-6</li>
+                    <li>A1-8</li>
+                </ol>  </li> 
+                <li><a href="https://www.audi.in/in/web/en.html">e-tron GT</a> </li>
+                <li><a href="https://www.audi.in/in/web/en.html">e-tron </a> </li>
+                <li><a href="https://www.audi.in/in/web/en.html">Q2-series</a> <ol>
+                    <li>Q2-3</li>
+                    <li>Q2-5</li>
+                    <li>Q2-7</li>
+                    <li>Q2-8</li>
+                    <li>Q2-8.1<ol>
+                        <li>RSQ2-8</li>   
+                    </ol></ol></li>
+                    <li><a href="https://www.audi.in/in/web/en.html">A2-series</a> <ol>
+                        <li>A2-4</li>
+                        <li>A2-5</li>
+                        <li>A2-6</li>
+                        <li>A2-8</li>
+                    </ol>  </li> 
+                    <li><a href="https://www.audi.in/in/web/en.html">e-tron GT</a> </li>
+                    <li><a href="https://www.audi.in/in/web/en.html">e-tron </a> </li>
+                    <li><a href="https://www.audi.in/in/web/en.html">Q3-series</a> <ol>
+                        <li>Q3-3</li>
+                        <li>Q3-5</li>
+                        <li>Q3-7</li>
+                        <li>Q3-8</li>
+                        <li>Q3-8.1<ol>
+                            <li>RSQ3-8</li>   
+                        </ol></ol></li>
+                        <li><a href="https://www.audi.in/in/web/en.html">A3-series</a> <ol>
+                            <li>A3-4</li>
+                            <li>A3-5</li>
+                            <li>A3-6</li>
+                            <li>A3-8</li>
+                        </ol>  </li>  
+                        <li><a href="https://www.audi.in/in/web/en.html">RSQ3-series</a> <ol>
+                          <li>RSQ3-1</li>
+                          <li>RSQ3-2</li>
+                          <li>RSQ3-3</li>     
+                      </ol>  </li>  
+
+          </ol>
+          </div>
+
+    </div>
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>AUDI</h2>
+      <h5>e-tron GT</h5>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://www.team-bhp.com/sites/default/files/styles/amp_high_res/public/audi-e-tron-gt-side-profile-b3bc.jpg" width="100%" height="100%" alt=""></a></div>
+      <p>Speciality of audi e-tron GT:</p>
+     <p> The Audi e-tron GT is a battery electric executive car produced by Audi since late 2020 as part of the e-tron battery electric sub-brand, and the third fully electric car model, after e-tron and e-tron Sportback SUVs. Based on the J1 platform shared with the Porsche Taycan, the car went on sale in March 2021.</p>
+  <p>What is the range of a Audi e-tron GT?<br><br>
+   
+    In the case of the Audi e-tron GT (Porsche Taycan 4S cousin), it's 238 miles (383 kilometers) of EPA Combined range, while the Audi RS e-tron GT (Porsche Taycan Turbo cousin) is rated at 232 miles (373 km).</p>
+    </div>
+     <div class="card">
+      <h2>Q-series</h2>
+      <h5>Power of world</h5>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2018/06/front-image-1530171828.jpg" height="auto" width="100%" alt=""></a></div>
+
+      <p>The 2.0-liter, two-turbocharged four-cylinder engine in the 40 TFSI generates 184 horsepower and 221 lb-ft of torque, and the 45 TFSI engine produces 228 horsepower and 258 lb-ft of torque. Both engines use Audi's Quattro all-wheel-drive system and an eight-speed automatic transmission.</p>
+
+    </div>
+    <div class="card">
+    <h2>A-series</h2>
+    <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://carwow-uk-wp-1.imgix.net/carwow-audi-a9-lead-edit_0.jpg?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600" height="auto" width="100%" alt=""></a></div>
+<p>A series are there in Audi: <br><br>
+  Audi India's current portfolio comprises the likes of A4, A6 and A8 sedans, Q2, Q5 and Q8 SUVs, S5 Sportback, RS5, RS7 and RS Q8 performance oriented cars as well as e-tron, e-tron GT and RS e-tron GT electric cars.
+  Audi follows a simple naming format, for the most part, employing letters and numbers. Base models have an “A” designation. Sportier luxury models get an “S.” The sportiest “RennSport” models get an “RS.” Audi uses “Q” for its SUV line.</p>
+  </div>
+  <div class="card">
+    <h2>RSQ3 series</h2>
+    <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://hips.hearstapps.com/hmg-prod/images/2020-audi-rs-q3-sportback-101-1569508446.jpg?crop=0.704xw:0.528xh;0.0391xw,0.342xh&resize=1200:*" height="auto" width="100%" alt=""></a></div>
+ <p>It is the first production turbo model in a Q-series vehicle; based on the Audi RS Q3 concept. The car accelerates from 0 to 100 km/h (62 mph) in 5.5 seconds and onto a limited top speed of 250 km/h (155.34 mph).</p>
+  </div>
+</div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Special one</h2>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/1-audi-rs-q3-sportback-2019-uk-fd-hero-front.jpg" height="auto" width="100%" alt=""></a></div>
+   <p>Is Audi RSQ3 an SUV: <br><br>
+    The Audi RS-Q3  a compact, high performance and sporty SUV with a strong, athletic design. The legendary 2.5 TFSI engine combined with quattro all-wheel drive delivers in any situation and the beautifully appointed cabin provides the perfect place to enjoy the ride.</p>
+    </div>
+    <div class="card">
+      <h2>Popular Post</h2>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="data:image/jpeg;base64,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" height="auto" width="100%" alt=""></a></div>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Audi/A4/9321/1670914111785/front-left-side-47.jpg" height="auto" width="100%" alt=""></a></div>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://stimg.cardekho.com/images/carexteriorimages/360x240/Audi/Audi-S5/1556087314823/047.jpg" height="auto" width="100%" alt=""></a></div>
+    </div>
+    <div class="card">
+      <h2>Super Sale</h2>
+      <div class="fakeimg" ><iframe width="100%" height="auto" src="https://www.youtube.com/embed/kMbu56zGjCM" title="10 New Audi Cars for 2022: Review of All Upgrades in the Brand&#39;s Lineup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p>
+These Are The Fastest Audi Models You Can Buy In 2023-<br>
+Audi R8 Performance Quattro.
+The Audi R8 Performance Quattro is the fastest Audi coupe and also the flagship model. The R8 Performance Quattro has a 0-60 mph time of 3.1 secods and a top speed of 205 mph</p>
+    </div>
+    <div class="card">
+      <h2>Top Models</h2>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://blog.beforward.jp/wp-content/uploads/2021/08/20210810-top10-audi.jpg" height="auto" width="100%" alt=""></a></div>
+<p>Audi car price starts at Rs 43.81 Lakh for the cheapest model which is A4 and the price of most expensive model, which is RS Q8 starts at Rs 2.22 Crore.</p>
+    </div>
+     <div class="card">
+      <h3>To buy Contact</h3>
+      <div class="fakeimg" ><a href="https://www.audi.in/in/web/en.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRib0rW_-hAPxYyFJP926IvlKFw1JfLpqtaEg&usqp=CAU" height="auto" width="100%" alt=""></a></div>
+<p>The target market of Audi is the affluent class of modern urban consumers.For more details contact above number.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p class="copy"  >Copyright © 2010 - 2023 Audi. All Rights Reserved</p>
+  <a href="https://www.audi.in/in/web/en.html" class="globe"><i class="fa-sharp fa-solid fa-globe fa-spin"></i> India / Support</a>
+
+</div>
+<div class="fixed">
+ <a style="text-decoration: none;color: white;" href="#move"> Move to top <i class="fa-solid fa-arrow-up fa-beat"></i></a>
+</div>
+
+</body>
+</html>
+
+
